@@ -1,0 +1,6 @@
+<h1 class="create_pg">create page</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}  <!-- 입력, 수정 뷰의 경우 장고에서 자동으로 form을 만들어 출력해줌-->
+    <input type="submit" value="Add" class="btn btn-info btn-sm">
+  </form>

@@ -1,0 +1,26 @@
+DB 테이블 추가 : 
+python manage.py migrations app이름
+python manage.py migrate app이름
+
+django.contrib.admin (관리용 사이트)
+-모델에 대한 관리용 인터페이스 자동 생성
+-사이트 관리용 통합 인터페이스 생성
+
+django.contrib.auth (인증 시스템)
+-장고 사용자 인증 시스템 지원(사용자 계정, 그룹, 권한, 쿠키 기반의 사용자 세션)
+-인증과 권한 부여 모두 처리
+
+django.contrib.contenttypes (컨텐츠 타입을 위한 프레임워크)
+-모델 간의 관계 및 모델 ContentType 중 인스턴스 간의 관계 활성화에 사용
+-테이블 간에 조인을 사용할 때 사용하는 프레임워크
+
+django.contrib.sessions (세션 프레임워크)
+-장고의 익명 세션 지원, 사이트 방문자별 임의 데이터 저장 검색 가능
+-db 세션 기본 저장하고, 캐시, 파일, 쿠키 등 기반에서 사용
+
+django.contrib.messages (메시징 프레임워크)
+-장고는 쿠키 및 세션 기반 메시징 지원
+-하나의 요청에 메시지 임시 저장하고 후속 요청에 표시 위해 검색 가능
+
+django.contrib.staticfiles (정적 파일을 관리하는 프레임워크)
+-각 애플리케이션의 정적 파일 수집(쉽게 제공 가능한 단일 위치 수집)
