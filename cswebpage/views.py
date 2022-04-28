@@ -1,7 +1,7 @@
 from django.views.generic.list import ListView
 from django.views.generic.edit import CreateView
 from django.urls import reverse_lazy
-from .models import info, Testtable
+from .models import info, Testtable, Customer
 
 # CRUD 페이지.
 class mainView(ListView):
@@ -21,6 +21,6 @@ class infoListCreateView(CreateView):
 
 # study site
 class sqlStudySiteMapping(ListView):
-    model = Testtable
+    model = Customer
     # template_name_suffix = '_sql';
     template_name = 'cswebpage/study_site/info_sql.html'

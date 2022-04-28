@@ -12,17 +12,29 @@
         <thead>
             <tr>
                 <th scope="col">No<k/th>
-                <th scope="col">site_name</th>
+                <th scope="col">customerid</th>
+                <th scope="col">customername</th>
+                <th scope="col">contactname</th>
+                <th scope="col">address</th>
+                <th scope="col">city</th>
+                <th scope="col">postalcode</th>
+                <th scope="col">country</th>
                 <th scope="col">Modify</th>
                 <th scope="col">Delete</th>
             </tr>
         </thead>
         <tbody>
-            {% for info in object_list %}
+            {% for Customer in object_list %}
             <!-- 규칙 : queryset일 경우 object_list, 1개인 경우 object -->
             <tr>
                 <td>{{ forloop.counter }}</td> <!-- number -->
-                <td>{{ info.site_name }}</td> <!-- bookmark 모델 인스턴스.필드(컬럼)명-->
+                <td>{{ Customer.customerid }}</td> <!-- bookmark 모델 인스턴스.필드(컬럼)명-->
+                <td>{{ Customer.customername }}</td> <!-- bookmark 모델 인스턴스.필드(컬럼)명-->
+                <td>{{ Customer.contactname }}</td> <!-- bookmark 모델 인스턴스.필드(컬럼)명-->
+                <td>{{ Customer.address }}</td> <!-- bookmark 모델 인스턴스.필드(컬럼)명-->
+                <td>{{ Customer.city }}</td> <!-- bookmark 모델 인스턴스.필드(컬럼)명-->
+                <td>{{ Customer.postalcode }}</td> <!-- bookmark 모델 인스턴스.필드(컬럼)명-->
+                <td>{{ Customer.country }}</td> <!-- bookmark 모델 인스턴스.필드(컬럼)명-->
                 <td><a href="#" class="bnt btn-success btn-sm">Modify</a></td><br>
                 <td><a href="#" class="bnt btn-danger btn-sm">Delete</a></td><br>
             </tr>

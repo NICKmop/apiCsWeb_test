@@ -1,0 +1,7 @@
+DB 테이블 추가 : 
+python manage.py migrations app이름
+python manage.py migrate app이름
+
+DB 테이블 변동 사항 체크 :
+python manage.py inspectdb
+
