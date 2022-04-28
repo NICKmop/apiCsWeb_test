@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import infoListCreateView, infoListView, mainView
+from .views import sqlStudySiteMapping ,infoListCreateView, infoListView, mainView
 
 urlpatterns = [
     # as_view() : 클래스형 뷰를 내부적으로 함수형 뷰로 처리
@@ -7,4 +7,7 @@ urlpatterns = [
     path('', mainView.as_view(),name="main"),
     path('list/', infoListView.as_view(), name='list'),  # http://127.0.0.1/cswebpage/
     path('add/', infoListCreateView.as_view(), name='add'),
+
+    # study site mapping
+    path('study/sql/',sqlStudySiteMapping.as_view(), name='sql'),
 ]

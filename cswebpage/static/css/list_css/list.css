@@ -4,4 +4,21 @@
 }
 th, td {
     border: 1px solid #444444;
+    color: white;
+    text-decoration: none;
+}
+.btn.btn-info {
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+}
+.bnt.btn-success.btn-sm {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.bnt.btn-danger.btn-sm {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
