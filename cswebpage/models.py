@@ -7,7 +7,7 @@ class info(models.Model):
     # 해당 모델 데이터 정상 전달 되는지 확인 
     def __str__(self):
         return '사이트 이름 : ' + self.site_name;
-
+# DB 테이블
 class Testtable(models.Model):
     id = models.IntegerField(primary_key=True)
     test = models.CharField(max_length=100, blank=True, null=True)
