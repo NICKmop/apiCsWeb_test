@@ -1,14 +1,14 @@
 $(document).ready(function(){
-    $('.pangTable.close').hide();
-    $('.pangTable.idle').click(function(){
+    $('.csWebTable.close').hide();
+    $('.csWebTable.idle').click(function(){
         // "/pangTable"
-        $('.pangTable.idle').hide();
-        $('.pangTable.close').show();
+        $('.csWebTable.idle').hide();
+        $('.csWebTable.close').show();
     });
-    $('.pangTable.close').click(function(){
+    $('.csWebTable.close').click(function(){
         // "/pangTable"
-        $('.pangTable.idle').show();
-        $('.pangTable.close').hide();
+        $('.csWebTable.idle').show();
+        $('.csWebTable.close').hide();
     });
 
     $("#keyword").keyup(function() {
