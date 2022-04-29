@@ -15,8 +15,8 @@ DATABASES = {
         'NAME': 'csweb',
         'USER': 'admin',
         'PASSWORD': '123qwe',
-        'HOST': '54.180.79.115',
-        'PORT': '52146',
+        'HOST': '54.180.102.243',
+        'PORT': '57420',
     }
     # ,
     # 'referencedb1': {
